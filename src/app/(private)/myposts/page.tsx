@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return <div>own posts</div>;
+  return <div className="grid h-dvh place-items-center">own posts</div>;
 };
 
 export default page;

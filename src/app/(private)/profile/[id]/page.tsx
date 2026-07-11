@@ -3,11 +3,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Profile | PixSlash",
   description:
-    "Discover high-quality wallpapers, uploads, collections, and creative contributions.",
+    "Update your profile picture, personal information, password, and manage your PixSlash account, including account deletion.",
 };
 
 const page = () => {
-  return <div>User Profile</div>;
+  return <div className="grid h-dvh place-items-center">User Profile</div>;
 };
 
 export default page;
