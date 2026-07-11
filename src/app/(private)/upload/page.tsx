@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return <div>uplaod</div>;
+  return <div>upload</div>;
 };
 
 export default page;

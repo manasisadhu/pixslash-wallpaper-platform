@@ -2,7 +2,7 @@ import ToastButton from "@/components/Buttons/ToastButton";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Stunning Free Wallpapers & Images | Pixslash",
+  title: "Stunning Free Wallpapers & Images | PixSlash",
   description:
     "The best free stock photos, royalty free images & Wallpapers shared by creators. Discover, collect stunning wallpapers. Pixslash is your destination for high-quality wallpapers.",
 };

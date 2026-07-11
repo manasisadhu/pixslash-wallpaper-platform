@@ -4,6 +4,6 @@ export type RootLayoutProps = Readonly<{
   children: ReactNode;
 }>;
 
-export type LayoutChildrenProps = {
+export type LayoutChildrenProps = Readonly<{
   children: ReactNode;
-};
+}>;

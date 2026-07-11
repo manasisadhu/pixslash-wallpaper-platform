@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Profile | PixSlash  ",
+  title: "Profile | PixSlash",
   description:
     "Discover high-quality wallpapers, uploads, collections, and creative contributions.",
 };
