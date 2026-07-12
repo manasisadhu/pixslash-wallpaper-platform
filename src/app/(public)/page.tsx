@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Stunning Free Wallpapers & Images | PixSlash",
   description:
-    "The best free stock photos, royalty free images & Wallpapers shared by creators. Discover, collect stunning wallpapers. Pixslash is your destination for high-quality wallpapers.",
+    "The best free stock photos, royalty free images & Wallpapers shared by creators. Discover, collect stunning wallpapers. PixSlash  is your destination for high-quality wallpapers.",
 };
 
 const page = () => {
