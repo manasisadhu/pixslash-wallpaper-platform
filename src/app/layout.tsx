@@ -1,3 +1,4 @@
+import MobileBottomNav from "@/components/Header/MobileBottomNav";
 import PublicHeader from "@/components/Header/PublicHeader";
 import ThemeProvider from "@/components/Providers/ThemeProvider";
 import { notoSansHeading, nunitoSans } from "@/lib/fonts";
@@ -23,6 +24,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           enableSystem={false}>
           <PublicHeader />
           <main className="mx-auto max-w-7xl">{children}</main>
+          <MobileBottomNav />
         </ThemeProvider>
       </body>
     </html>
