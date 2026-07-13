@@ -7,7 +7,7 @@ import { buttonVariants } from "../shadcnui/button";
 type NavigateButtonProps = {
   children: ReactNode;
   className?: string;
-  navigationLink: string;
+  navigationLink: Route;
   buttonVariant: "default" | "ghost" | "link" | "outline" | "secondary";
 };
 
@@ -19,11 +19,8 @@ const NavigateButton = ({
 }: NavigateButtonProps) => {
   return (
     <Link
-      href={navigationLink as Route}
-      className={cn(
-        buttonVariants({ variant: `${buttonVariant}` }),
-        className,
-      )}>
+      href={navigationLink}
+      className={cn(buttonVariants({ variant: buttonVariant }), className)}>
       {children}
     </Link>
   );
