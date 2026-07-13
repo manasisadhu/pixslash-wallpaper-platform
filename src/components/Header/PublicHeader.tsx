@@ -31,7 +31,7 @@ const PublicHeader = () => {
         {/* navigation routes  */}
         <nav
           className="hidden lg:flex lg:items-center lg:gap-3"
-          aria-label="wallpapers-route-link">
+          aria-label="primary-navigation">
           <Link
             href="/wallpapers"
             className="hover:text-muted-foreground">
@@ -40,21 +40,18 @@ const PublicHeader = () => {
 
           <Link
             href="/categories"
-            aria-label="categories-route-link"
             className="hover:text-muted-foreground">
             categories
           </Link>
 
           <Link
             href="/login"
-            aria-label="login-route-link"
             className={buttonVariants({ variant: "ghost", className: "px-3" })}>
             Login
           </Link>
 
           <Link
             href="/register"
-            aria-label="register-route-link"
             className={buttonVariants({ variant: "default" })}>
             Register
           </Link>
@@ -63,9 +60,9 @@ const PublicHeader = () => {
         </nav>
 
         {/* mobile menu toggle  */}
-        <aside className="block lg:hidden">
+        <div className="block lg:hidden">
           <HeaderMenuButton />
-        </aside>
+        </div>
       </section>
     </header>
   );
