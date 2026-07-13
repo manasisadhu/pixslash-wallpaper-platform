@@ -1,4 +1,6 @@
 import HomeFlotingElements from "@/components/BackgroundUi/HomeFlotingElements";
+import NavigateButton from "@/components/Buttons/NavigateButton";
+import { ArrowUpRightIcon } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -32,6 +34,22 @@ const page = async () => {
           A growing library of high-quality wallpapers — browse by mood, save
           your favourites, and share the ones you make.
         </p>
+
+        <div className="mt-4 space-x-4">
+          <NavigateButton
+            className="group hover:bg-black dark:bg-white"
+            buttonVariant="default"
+            navigationLink="/wallpapers">
+            Browse wallpapers
+            <ArrowUpRightIcon className="ml-1.5 size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </NavigateButton>
+
+          <NavigateButton
+            buttonVariant="ghost"
+            navigationLink="/upload">
+            Upload yours
+          </NavigateButton>
+        </div>
       </div>
     </section>
   );
