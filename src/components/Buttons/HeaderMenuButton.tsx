@@ -8,8 +8,8 @@ import { buttonVariants } from "../shadcnui/button";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "../shadcnui/sheet";
 
@@ -20,15 +20,17 @@ const HeaderMenuButton = () => {
     <Sheet
       open={isOpen}
       onOpenChange={setOpen}>
-      <SheetTrigger aria-label="Open navigation menu">
+      <SheetTrigger aria-label="navigation menu trigger button">
         <MenuIcon />
       </SheetTrigger>
 
       <SheetContent>
         <SheetHeader className="border-b-2">
+          <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+
           <Link
             href={"/"}
-            aria-label="PixSlash-Web-Logo"
+            aria-label="Go to home page"
             onClick={() => setOpen(false)}>
             <Image
               src="/logo.png"
@@ -39,8 +41,6 @@ const HeaderMenuButton = () => {
               className="h-8 w-auto"
             />
           </Link>
-
-          <SheetDescription />
         </SheetHeader>
 
         <nav
