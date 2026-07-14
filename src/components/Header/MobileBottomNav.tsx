@@ -62,15 +62,23 @@ function PublicBottomNav() {
 
   return (
     <div className="flex justify-around">
-      {publicNavItems.map((item) => (
-        <Link
-          key={item.id}
-          href={item.navLink}
-          className={`${path === item.navLink ? "text-white" : "hover:text-white"} text-muted-foreground flex flex-col items-center`}>
-          <item.icon size={16} />
-          {item.label}
-        </Link>
-      ))}
+      {publicNavItems.map((item) => {
+        const isActive =
+          path === item.navLink || path.startsWith(`${item.navLink}/`);
+
+        return (
+          <Link
+            key={item.id}
+            href={item.navLink}
+            aria-current={isActive ? "page" : undefined}
+            className={`${
+              isActive ? "text-white" : "hover:text-white"
+            } text-muted-foreground flex flex-col items-center`}>
+            <item.icon size={16} />
+            {item.label}
+          </Link>
+        );
+      })}
     </div>
   );
 }
