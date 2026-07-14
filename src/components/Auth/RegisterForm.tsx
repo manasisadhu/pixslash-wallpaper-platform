@@ -13,6 +13,7 @@ const RegisterForm = () => {
   const {
     handleSubmit,
     control,
+    reset,
     formState: { isSubmitting },
   } = useForm<RegisterSchemaType>({
     resolver: zodResolver(registerSchema),
@@ -29,12 +30,13 @@ const RegisterForm = () => {
 
   const submitRegisterData = (srData: RegisterSchemaType) => {
     console.log(srData);
+    reset();
   };
 
   return (
     <form
       onSubmit={handleSubmit(submitRegisterData)}
-      className="space-y-2"
+      className="space-y-3"
       noValidate>
       {/* user full name field  */}
       <Controller
